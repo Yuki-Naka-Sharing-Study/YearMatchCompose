@@ -40,9 +40,10 @@ android {
 }
 
 dependencies {
+    implementation("sh.calvin.reorderable:reorderable:2.4.3")
+    implementation("androidx.navigation:navigation-compose:2.8.9")
     implementation("androidx.compose.ui:ui:1.7.8")
     implementation("androidx.compose.material:material:1.7.8")
-    implementation("androidx.navigation:navigation-compose:2.8.9")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
