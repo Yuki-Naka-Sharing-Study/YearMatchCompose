@@ -6,8 +6,9 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.NavHost
 
 @Composable
-fun Navigation(navController: NavHostController) {
-    NavHost(navController, startDestination = "countrySelection") {
-        composable("countrySelection") { CountrySelectionScreen(navController) }
+fun Navigation(navHostController: NavHostController) {
+    NavHost(navHostController, startDestination = "countrySelection") {
+        composable("countrySelection") { CountrySelectionScreen(navHostController) }
+        composable("japanQuiz") { JapanQuizScreen(navHostController) }
     }
 }
