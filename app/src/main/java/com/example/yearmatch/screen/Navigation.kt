@@ -10,5 +10,6 @@ fun Navigation(navHostController: NavHostController) {
     NavHost(navHostController, startDestination = "countrySelection") {
         composable("countrySelection") { CountrySelectionScreen(navHostController) }
         composable("japanQuiz") { JapanQuizScreen(navHostController) }
+        composable("koreaQuiz") { KoreaQuizScreen(navHostController) }
     }
 }
