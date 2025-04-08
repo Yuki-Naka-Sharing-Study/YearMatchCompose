@@ -20,7 +20,7 @@ fun CountrySelectionScreen(navController: NavHostController) {
         "中国" to "chinaQuiz",
         "アメリカ" to "usaQuiz",
         "イギリス" to "ukQuiz",
-        "その他" to "otherQuiz"
+        "ロシア" to "russiaQuiz"
     )
 
     Column(
