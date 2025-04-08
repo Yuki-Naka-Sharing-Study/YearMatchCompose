@@ -17,7 +17,7 @@ fun Navigation(navHostController: NavHostController) {
         composable("ukQuiz") { UkQuizScreen(navHostController) }
         composable("germanyQuiz") { GermanyQuizScreen(navHostController) }
         composable("italyQuiz") { ItalyQuizScreen(navHostController) }
-        composable("netherlandsQuiz") { UkQuizScreen(navHostController) }
+        composable("netherlandsQuiz") { NetherlandsQuizScreen(navHostController) }
         composable("portugalQuiz") { UkQuizScreen(navHostController) }
         composable("spainQuiz") { UkQuizScreen(navHostController) }
         composable("mongoliaQuiz") { UkQuizScreen(navHostController) }
