@@ -16,6 +16,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.rounded.Menu
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
@@ -36,6 +37,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import sh.calvin.reorderable.ReorderableItem
 
@@ -48,8 +50,16 @@ fun JapanQuizScreen(
         topBar = {
             TopAppBar(
                 title = {
-                    Text("年号に歴史的事象を合わせてください。")
+                    Text(
+                        text = "年号に歴史的事象を合わせてください。",
+                        fontSize = 16.sp
+                        )
                 },
+                navigationIcon = {
+                    IconButton(onClick = { navHostController.popBackStack() }) {
+                        Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "戻る")
+                    }
+                }
             )
         },
     ) { paddingValues ->
@@ -65,11 +75,11 @@ fun JapanQuizScreen(
                 645, // 大化の改新
                 710, // 平城京遷都
                 794, // 平安京遷都
-                1192, // 源頼朝が征夷大将軍となり鎌倉幕府を開く
+                1192, // 源頼朝が鎌倉幕府を開く
                 1274, // 文永の役
                 1281, // 弘安の役
-                1543,  // ポルトガル人が種子島に鉄砲を伝える
-                1549, // フランシスコ・ザビエルがキリスト教を伝える
+                1543,  // 種子島に鉄砲が伝える
+                1549, // ザビエルがキリスト教を伝える
                 1600, // 関ヶ原の戦い
                 1603, // 江戸幕府成立
                 1853, // ペリー来航（黒船来航）
@@ -86,11 +96,11 @@ fun JapanQuizScreen(
                         "大化の改新",
                         "平城京遷都",
                         "平安京遷都",
-                        "源頼朝が征夷大将軍となり鎌倉幕府を開く",
+                        "源頼朝が鎌倉幕府を開く",
                         "文永の役",
                         "弘安の役",
-                        "ポルトガル人が種子島に鉄砲を伝える",
-                        "フランシスコ・ザビエルがキリスト教を伝える",
+                        "種子島に鉄砲が伝える",
+                        "ザビエルがキリスト教を伝える",
                         "関ヶ原の戦い",
                         "江戸幕府成立",
                         "ペリー来航（黒船来航）",
@@ -191,11 +201,11 @@ fun JapanQuizScreen(
                             "大化の改新",
                             "平城京遷都",
                             "平安京遷都",
-                            "源頼朝が征夷大将軍となり鎌倉幕府を開く",
+                            "源頼朝が鎌倉幕府を開く",
                             "文永の役",
                             "弘安の役",
-                            "ポルトガル人が種子島に鉄砲を伝える",
-                            "フランシスコ・ザビエルがキリスト教を伝える",
+                            "種子島に鉄砲が伝える",
+                            "ザビエルがキリスト教を伝える",
                             "関ヶ原の戦い",
                             "江戸幕府成立",
                             "ペリー来航（黒船来航）",
