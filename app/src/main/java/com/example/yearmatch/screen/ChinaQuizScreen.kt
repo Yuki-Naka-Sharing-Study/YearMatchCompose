@@ -16,6 +16,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.rounded.Menu
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
@@ -36,6 +37,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import sh.calvin.reorderable.ReorderableItem
 
@@ -48,8 +50,16 @@ fun ChinaQuizScreen(
         topBar = {
             TopAppBar(
                 title = {
-                    Text("年号に歴史的事象を合わせてください。")
+                    Text(
+                        text = "年号に歴史的事象を合わせてください。",
+                        fontSize = 16.sp
+                    )
                 },
+                navigationIcon = {
+                    IconButton(onClick = { navHostController.popBackStack() }) {
+                        Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "戻る")
+                    }
+                }
             )
         },
     ) { paddingValues ->
