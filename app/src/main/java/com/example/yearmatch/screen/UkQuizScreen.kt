@@ -257,7 +257,10 @@ fun UkQuizScreen(
                 AlertDialog(
                     onDismissRequest = { showDialog = false },
                     confirmButton = {
-                        Button(onClick = { showDialog = false }) {
+                        Button(
+                            onClick = { showDialog = false },
+                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF808080))
+                        ) {
                             Text("閉じる")
                         }
                     },
