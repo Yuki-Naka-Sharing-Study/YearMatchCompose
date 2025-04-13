@@ -70,6 +70,18 @@ fun KoreaQuizScreen(
                 .padding(16.dp),
             horizontalAlignment = Alignment.Start
         ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 16.dp),
+                contentAlignment = Alignment.TopCenter
+            ) {
+                Text(
+                    text = "年号と歴史的事情をドラッグ&ドロップで一致させてください。",
+                    fontSize = 12.sp
+                )
+            }
+
             val years = listOf(
                 372,  // 高句麗が前秦から仏教を受容
                 676, // 新羅が朝鮮半島を統一

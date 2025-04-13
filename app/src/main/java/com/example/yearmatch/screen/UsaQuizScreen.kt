@@ -69,6 +69,18 @@ fun UsaQuizScreen(
                 .padding(16.dp),
             horizontalAlignment = Alignment.Start
         ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 16.dp),
+                contentAlignment = Alignment.TopCenter
+            ) {
+                Text(
+                    text = "年号と歴史的事情をドラッグ&ドロップで一致させてください。",
+                    fontSize = 12.sp
+                )
+            }
+
             val years = listOf(
                 1492,  // コロンブス新大陸到達
                 1607,  // ジェームズタウン建設

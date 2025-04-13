@@ -70,6 +70,18 @@ fun ChinaQuizScreen(
                 .padding(16.dp),
             horizontalAlignment = Alignment.Start
         ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 16.dp),
+                contentAlignment = Alignment.TopCenter
+            ) {
+                Text(
+                    text = "年号と歴史的事情をドラッグ&ドロップで一致させてください。",
+                    fontSize = 12.sp
+                )
+            }
+
             val years = listOf(
                 220,  // 後漢滅亡
                 280, // 西晋が天下統一
