@@ -18,6 +18,14 @@ import androidx.navigation.NavHostController
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CountrySelectionScreen(navController: NavHostController) {
+    // TODO : 他追加予定を検討している国
+    // Sweden, 	Romania, Hungary, Hungary, Finland
+    // Saudi Arabia, Afghanistan, South Africa
+    // Ethiopia, Algeria, Cuba,
+    // Argentina, Peru, Chile
+    // Thailand, Vietnam, Indonesia
+    // Malaysia, AustraliaCambodia
+
     val countries = listOf(
         "🇯🇵" to "japanQuiz",
         "🇨🇳" to "chinaQuiz",
