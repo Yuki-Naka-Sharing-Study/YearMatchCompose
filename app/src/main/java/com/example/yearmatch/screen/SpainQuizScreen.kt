@@ -20,6 +20,7 @@ import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.rounded.Menu
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -36,6 +37,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
@@ -155,10 +157,11 @@ fun SpainQuizScreen(
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .height(36.dp),
-                                color = MaterialTheme.colorScheme.primary
+                                color = Color(0xFF9400d3)
                             ) {
                                 Text(
                                     text = "$year",
+                                    color = Color.White,
                                     modifier = Modifier
                                         .padding(8.dp)
                                         .fillMaxWidth(),
@@ -241,7 +244,8 @@ fun SpainQuizScreen(
                     },
                     modifier = Modifier
                         .align(Alignment.BottomCenter)
-                        .padding(bottom = 16.dp)
+                        .padding(bottom = 16.dp),
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF0000ff))
                 ) {
                     Text("回答")
                 }
