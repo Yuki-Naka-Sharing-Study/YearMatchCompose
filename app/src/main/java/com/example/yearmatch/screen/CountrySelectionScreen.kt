@@ -26,17 +26,23 @@ fun CountrySelectionScreen(navController: NavHostController) {
         "🇺🇸" to "usaQuiz",
         "🇬🇧" to "ukQuiz",
         "🇩🇪" to "germanyQuiz",
+        "🇫🇷" to "franceQuiz",
         "🇮🇹" to "italyQuiz",
         "🇳🇱" to "netherlandsQuiz",
         "🇵🇹" to "portugalQuiz",
         "🇪🇸" to "spainQuiz",
         "🇲🇳" to "mongoliaQuiz",
         "🇹🇷" to "türkiyeQuiz",
+        "🇮🇱" to "israelQuiz",
+        "🇵🇱" to "polandQuiz",
         "🇮🇳" to "indiaQuiz",
+        "🇵🇰" to "pakistanQuiz",
         "🇮🇷" to "iranQuiz",
         "🇬🇷" to "greeceQuiz",
         "🇮🇶" to "iraqQuiz",
-        "🇪🇬" to "egyptQuiz"
+        "🇪🇬" to "egyptQuiz",
+        "🇲🇽" to "mexicoQuiz",
+        "🇦🇹" to "austriaQuiz",
     )
 
     Scaffold(
