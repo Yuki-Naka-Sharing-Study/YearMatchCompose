@@ -80,7 +80,7 @@ fun JapanQuizScreen(
                 contentAlignment = Alignment.TopCenter
             ) {
                 Text(
-                    text = "年号と歴史的事情をドラッグ&ドロップで一致させてください。",
+                    text = "固定の年号に対して\n歴史的事情をドラッグ&ドロップで一致させてください。",
                     fontSize = 12.sp
                 )
             }
